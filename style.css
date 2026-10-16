@@ -206,6 +206,57 @@ a:hover { text-decoration: underline; }
 .site-footer .links a:hover { color: var(--primary); }
 .site-footer .disclaimer { margin-top: 10px; }
 
+/* 대표 시술 안내 · 결제·환불 안내 (index) */
+.section h2.tight { margin-bottom: 14px; }
+.section .lead {
+  text-align: center;
+  color: var(--sub);
+  font-size: 14px;
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.menu-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px 24px;
+  background: #fff;
+}
+.menu-card h3 { font-size: 17px; font-weight: 700; }
+.menu-card .price { font-size: 26px; font-weight: 800; color: var(--primary); margin-top: 6px; }
+.menu-card .duration { font-size: 13px; color: var(--sub); margin-bottom: 14px; }
+.menu-card dl { font-size: 13.5px; color: var(--sub); line-height: 1.65; }
+.menu-card dt { font-weight: 700; color: var(--text); margin-top: 10px; }
+.menu-card dd { margin: 0; }
+
+.pay-info {
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  background: #fff;
+}
+.pay-info h3 { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
+.pay-info ul { list-style: none; margin-bottom: 18px; }
+.pay-info li { font-size: 14px; color: var(--sub); margin-bottom: 6px; }
+.pay-info li strong { color: var(--text); margin-right: 6px; }
+.pay-info .table-title { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.pay-info .table-title a { font-weight: 400; font-size: 13px; }
+.refund-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 14px; }
+.refund-table th, .refund-table td {
+  border: 1px solid var(--border);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.refund-table th { background: var(--primary-light); font-weight: 700; }
+.refund-table td:first-child { width: 48%; }
+.pay-info .pay-contact { font-size: 13.5px; color: var(--sub); }
+
 @media (max-width: 480px) {
   .hero h1 { font-size: 32px; }
   .hero { padding: 64px 20px 56px; }
